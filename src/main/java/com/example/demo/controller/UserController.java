@@ -40,6 +40,7 @@ public class UserController {
         userRepository.saveAndFlush(newUser);
 
         return ResponseEntity.ok(new UserDTO(newUser));
+//        return ResponseEntity.ok(newUser);
 
 //        UserEntity gotUser = userRepository.findById(newUser.getId())
 //                .orElseThrow(() -> new RuntimeException("Error: fetching new user from database"));
